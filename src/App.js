@@ -7,9 +7,16 @@ import NewTransactionForm from "./NewTransactionForm";
 
 // Define the App component
 function App() {
+  // Define an array of sample transactions
+  const initialTransactions = [
+    { date: "Wed Apr 01 2020", description: "Groceries", category: "Food", amount: 50},
+    { date: "Thur Apr 02 2020", description: "Movies", category: "Entertainment", amount: 600},
+    { date: "Fri Apr 03  2020", description: "Fuel", category: "Transportation", amount: 5000},
+    { date: "Sat Apr 04 2020", description: "Phone Bill", category: "Utilities", amount: 80},
+  ]
   // Set variables for transactions and filtered transactions
-  const [transactions, setTransactions] = useState([]);
-  const [filteredTransactions, setFilteredTransactions] = useState([]);
+  const [transactions, setTransactions] = useState(initialTransactions);
+  const [filteredTransactions, setFilteredTransactions] = useState(initialTransactions);
 
   // Function to add a new transaction
   function addTransactions(transaction) {
@@ -24,6 +31,9 @@ function App() {
 );
  setFilteredTransactions(filtered);
 }
+
+console.log(initialTransactions);
+console.log(transactions);
 
 return (
   <div>

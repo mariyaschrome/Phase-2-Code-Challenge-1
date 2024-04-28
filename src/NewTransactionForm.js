@@ -31,7 +31,7 @@ function NewTransactionForm({ addTransaction }) {
             <DatePicker
             selected={date}
             onChange={(date) => setDate(date)}
-            dateFormat="MMMM d, yyyy"
+            dateFormat="yyyy-MMMM-d"
             placeholderText="Date"
             className="date-picker"
             popperPlacement="top-start"
