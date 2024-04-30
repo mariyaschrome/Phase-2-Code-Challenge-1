@@ -67,7 +67,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### Site link
 
-THis is the site link for the code challenge: http://localhost:3000/
+THis is the site link for the code challenge: https://phase-2-code-challenge-1-six.vercel.app/
 
 ### `npm run build` fails to minify
 
